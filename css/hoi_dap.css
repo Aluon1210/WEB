@@ -1,0 +1,80 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* ===== Nội dung chính ===== */
+main {
+    width: 60%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Câu hỏi thường gặp ===== */
+.faq {
+    margin-bottom: 30px;
+}
+
+.question {
+    text-align: left;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-left: 5px solid #0066cc;
+}
+
+/* ===== Form gửi câu hỏi ===== */
+.ask-question form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #0066cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #004b99;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
+    color: white;
+}

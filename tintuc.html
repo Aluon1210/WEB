@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif; /* Chọn font chữ Arial, nếu không có thì dùng sans-serif */
+    margin: 0; /* Loại bỏ lề mặc định của trình duyệt */
+    padding: 0; /* Loại bỏ khoảng đệm mặc định */
+    background-color: white; /* Đặt màu nền xám nhạt cho toàn bộ trang */
+    height: 100%;
+}
+
+.news-container {
+    width: 100%; /* Giới hạn chiều rộng của container là 60% màn hình */
+    margin: 0px; /* Căn giữa container theo chiều ngang với khoảng cách 20px trên dưới */
+    background: white; /* Đặt màu nền trắng cho container */
+   
+    border-radius: 10px; /* Bo góc container thành hình tròn 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ để tạo hiệu ứng nổi */
+}
+
+.news-item {
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang (flexbox) */
+    margin-bottom: 20px; /* Tạo khoảng cách 20px giữa các mục tin tức */
+    border-bottom: 1px solid #ddd; /* Thêm đường gạch ngang dưới mỗi mục tin */
+    padding-bottom: 10px; /* Tạo khoảng cách giữa nội dung và đường kẻ dưới */
+}
+
+.news-item img {
+    width: 120px; /* Đặt chiều rộng ảnh là 120px */
+    height: 80px; /* Đặt chiều cao ảnh là 80px */
+    object-fit: cover; /* Cắt ảnh để vừa với khung mà không bị méo */
+    margin-right: 15px; /* Tạo khoảng cách 15px giữa ảnh và nội dung văn bản */
+    border-radius: 5px; /* Bo góc ảnh thành 5px */
+}
+
+.news-content {
+    flex: 1; /* Chiếm toàn bộ phần còn lại của khung chứa */
+}
+
+.news-title {
+    font-size: 16px; /* Đặt kích thước chữ là 16px */
+    font-weight: bold; /* Làm đậm chữ tiêu đề */
+    color: #333; /* Đặt màu chữ tối để dễ đọc */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+
+.news-title:hover {
+    color: #007bff; /* Khi di chuột vào tiêu đề, đổi màu thành xanh dương */
+}
+
+.news-date {
+    font-size: 14px; /* Đặt kích thước chữ của ngày tháng là 14px */
+    color: #666; /* Đặt màu chữ xám nhạt để làm mờ thông tin ngày đăng */
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn chỉnh biểu tượng và chữ theo trục dọc */
+}
+
+.news-date i {
+    margin-right: 5px; /* Tạo khoảng cách 5px giữa biểu tượng và chữ */
+}
+
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <div class="news-item">
+            <img src="image/library/lễ sơ kết.jpeg" alt="News Image">
+            <div class="news-content">
+                <a href="tin tức/LeSoKet.html"  class="news-title">LỄ SƠ KẾT HỌC KỲ I NĂM HỌC 2024 - 2025 TRƯỜNG THPT HƯỚNG HÓA</a>
+                <p class="news-date">📅 Ngày đăng: <b>22/01/2025</b></p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="image/library/diễn tập phòng cháy chữa cháy.png" alt="News Image">
+            <div class="news-content">
+                <a href="tin tức/LeDienTap.html" class="news-title">DIỄN TẬP PHÒNG CHÁY CHỮA CHÁY - CỨU HỘ, CỨU NẠN TẠI TRƯỜNG THPT HƯỚNG HÓA</a>
+                <p class="news-date">📅 Ngày đăng: <b>22/01/2025</b></p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="image/library/lễ xuân hồng.jpg" alt="News Image">
+            <div class="news-content">
+                <a href="tin tức/LEHoiXuanHong.html" class="news-title">TRƯỜNG THPT HƯỚNG HÓA VÀ NGÀY HỘI “LỄ HỘI XUÂN HỒNG” ĐỢT I NĂM 2025</a>
+                <p class="news-date">📅 Ngày đăng: <b>17/01/2025</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

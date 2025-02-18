@@ -1,0 +1,289 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(235, 225, 225);
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+.head1 {
+    
+    box-sizing: 80%;
+    height: 260px;
+    background-image: url(../image/banner_final.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    border-style: solid;
+    padding: 0px 0px 0px ;
+    margin: 0px;
+    margin-left: 100px;
+    margin-right: 100PX;
+
+
+}
+
+/* ===== RESET MẶC ĐỊNH ===== */
+nav {
+    background-color: blue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 0 100px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== MENU NGANG ===== */
+.menu-ngang {
+    list-style: none;
+    display: flex;
+}
+
+.menu-ngang > li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.menu-ngang > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.menu-ngang > li:hover > a {
+    color: red;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* ===== MENU CON (DROPDOWN) ===== */
+.menu-ngang ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    padding: 8px 0;
+    display: none; /* Ẩn menu con mặc định */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+/* CHỈ HIỆN MENU CON KHI DI CHUỘT VÀO MỤC CHA */
+.menu-ngang li:hover > ul {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== ITEM TRONG MENU CON ===== */
+.menu-ngang ul li {
+    list-style: none;
+    font-variant: small-caps;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+    transition: background 0.3s;
+}
+
+.menu-ngang ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-ngang ul li a {
+    color: black;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-ngang ul li a:hover  {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* ===== THANH TÌM KIẾM ===== */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.search button {
+    padding: 8px 12px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search button:hover {
+    background: #ffaa00;
+}
+nav .body1 marquee {
+    position: relative; 
+    margin-bottom: 5px;
+    background-color: green;
+    
+}
+div marquee {
+    text-align: justify;
+    height: 30px;
+    color: red;
+    line-height: 30px;
+}
+.mquer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+aside {
+    float: left;
+    width: 300px;
+    border-left: 1px soid gray;
+    margin-left: 100px;
+
+}
+
+aside ul li {
+    list-style: none;
+    text-decoration: none;
+}
+h3 {
+    font-size: 20px;
+    padding: 10px 15px;
+    background: blue;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+}
+.MeNuDoc ul li {
+    padding: 10px;
+    background-color: white;
+    border-top: 2px solid gray;
+}
+.MeNuDoc ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 25px;
+    left: 40px;
+}
+
+
+.MeNuDo ul li:hover {
+    background: red;
+}
+
+.bot {
+    margin-left: 100px;
+    width: 300px;
+    background-color: transparent;
+}
+
+.bot h3 {
+    padding-bottom: 10px;
+    color: violet;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+/* khung hien thi */
+article {
+    float: left;
+    width: 64%;
+    height: 1200px;
+    margin-left: 35px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border-right: 1px solid ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-1 { 
+    max-width: auto;
+    height: 60%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+article .map {
+    height: 35%;
+
+}
+article h2 {
+    text-align: center;
+    font-size: 25px;
+    font-variant: small-caps;
+    color: rgb(rgb(119, 0, 255), green, blue);
+}
+.frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+
+footer {
+    width: auto;
+    height: 145px; /* Adjusted height to be shorter */
+    clear: both;
+    background: blue;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+}
+.ft1 {
+    float: left;
+    width: 470px;
+    padding-left: 20px;
+    padding-top: 10px;
+
+ }
+  footer h3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+.ft2 {
+    float: left;
+    padding-left: 20px;
+    width: 470px;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ .ft3 {
+    width: 100%;
+    height: 30px;
+    clear: both;
+    background: aqua;
+ }
+
+ .ft3 {
+    color: black;
+    font-size: 15px;
+    font-variant: small-caps;
+    text-align: center ;
+ }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tư Liệu Dạy Học - THPT Hướng Hóa</title>
+    <link rel="stylesheet" href="css/tulieudayhocj.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Tư Liệu Dạy Học</h1>
+    </header>
+
+
+    <main>
+        <h2>📄 Danh Sách Tài Liệu</h2>
+        <table>
+            <tr>
+                <th>Tên tài liệu</th>
+                <th>Mô tả</th>
+                <th>Tải xuống</th>
+            </tr>
+            <tr>
+                <td>🖥️ Xây dựng Trang Web</td>
+                <td>Trọn bộ Bài tập.</td>
+                <td><a href="uploads/toan12_giai_tich.pdf " class="download-btn">⬇️ Tải xuống</a></td>
+            </tr>
+            <tr>
+                <td>📊 CƠ SỞ DỮ LIỆU</td>
+                <td>Slide bài giảng.</td>
+                <td><a href="uploads/media/Slide/COM2012-Slide1.pdf" class="download-btn">⬇️ Tải xuống</a></td>
+            </tr>
+        </table>
+
+        <h2 class="upload-title">📤 Tải Lên Tài Liệu Mới</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file">📁 Chọn file:</label>
+            <input type="file" name="file" id="file" required>
+            <button type="submit" class="upload-btn">📂 Tải Lên</button>
+        </form>
+    </main>
+
+   
+
+</body>
+</html>

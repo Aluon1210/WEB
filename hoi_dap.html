@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỏi Đáp - Trường THPT Hướng Hóa</title>
+    <link rel="stylesheet" href="css/hoi_dap.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HỎI ĐÁP</h1>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+        <section class="faq">
+            <h2>Câu Hỏi Thường Gặp</h2>
+            <div class="question">
+                <h3>📌 Làm thế nào để đăng ký nhập học?</h3>
+                <p>Để đăng ký nhập học, vui lòng truy cập vào trang "Liên Hệ" hoặc gọi số hotline của trường.</p>
+            </div>
+            <div class="question">
+                <h3>📌 Học phí của trường là bao nhiêu?</h3>
+                <p>Học phí phụ thuộc vào từng năm học và từng chương trình. Vui lòng liên hệ để biết thông tin chi tiết.</p>
+            </div>
+            <div class="question">
+                <h3>📌 Thời gian tuyển sinh của trường là khi nào?</h3>
+                <p>Thời gian tuyển sinh thường diễn ra vào tháng 5 - tháng 7 hàng năm.</p>
+            </div>
+        </section>
+
+        <!-- Form gửi câu hỏi -->
+        <section class="ask-question">
+            <h2>Gửi Câu Hỏi Mới</h2>
+            <form action="submit_question.php" method="POST">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">Câu Hỏi:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <button type="submit">Gửi Câu Hỏi</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Trường THPT Hướng Hóa - Mọi quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời Khóa Biểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Thời Khóa Biểu</h2>
+        <table>
+            <tr>
+                <th>Lớp</th>
+                <th>Tiết 1</th>
+                <th>Tiết 2</th>
+                <th>Tiết 3</th>
+                <th>Tiết 4</th>
+                <th>Tiết 5</th>
+                <th>Ngoại Khóa 1</th>
+                <th>Ngoại Khóa 2</th>
+            </tr>
+            <!-- Tạo 30 lớp từ lớp 10 đến lớp 12 -->
+            <script>
+                const classes = [];
+                for (let grade = 10; grade <= 12; grade++) {
+                    for (let i = 1; i <= 10; i++) {
+                        classes.push(`Lớp ${grade}A${i}`);
+                    }
+                }
+                
+                const subjects = ["Toán", "Văn", "Anh", "Lý", "Hóa", "Sinh", "Sử", "Địa", "GDCD", "Công Nghệ"];
+                const extracurriculars = ["Thể dục", "Âm nhạc", "Mỹ thuật", "CLB Khoa Học", "CLB Văn Học"];
+                
+                document.write(classes.map(cls => {
+                    let row = `<tr><td>${cls}</td>`;
+                    for (let i = 0; i < 5; i++) {
+                        row += `<td>${subjects[Math.floor(Math.random() * subjects.length)]}</td>`;
+                    }
+                    for (let i = 0; i < 2; i++) {
+                        row += `<td>${extracurriculars[Math.floor(Math.random() * extracurriculars.length)]}</td>`;
+                    }
+                    row += `</tr>`;
+                    return row;
+                }).join(""));
+            </script>
+        </table>
+    </div>
+</body>
+</html>

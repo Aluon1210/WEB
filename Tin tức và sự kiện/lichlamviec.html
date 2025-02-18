@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Làm Việc Tổ Chuyên Môn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lịch Làm Việc Tổ Chuyên Môn</h2>
+        <table>
+            <tr>
+                <th>Tổ Chuyên Môn</th>
+                <th>Thứ Hai</th>
+                <th>Thứ Ba</th>
+                <th>Thứ Tư</th>
+                <th>Thứ Năm</th>
+                <th>Thứ Sáu</th>
+            </tr>
+            <script>
+                const departments = ["Toán", "Văn", "Anh", "Lý", "Hóa", "Sinh", "Sử", "Địa", "GDCD", "Công Nghệ"];
+                const activities = ["Họp tổ chuyên môn", "Soạn giáo án", "Giảng dạy", "Nghiên cứu", "Bồi dưỡng học sinh giỏi"];
+                
+                document.write(departments.map(dept => {
+                    let row = `<tr><td>${dept}</td>`;
+                    for (let i = 0; i < 5; i++) {
+                        row += `<td>${activities[Math.floor(Math.random() * activities.length)]}</td>`;
+                    }
+                    row += `</tr>`;
+                    return row;
+                }).join(""));
+            </script>
+        </table>
+    </div>
+</body>
+</html>
